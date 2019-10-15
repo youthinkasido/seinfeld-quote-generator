@@ -1,4 +1,7 @@
-var app = require('./test')
-
-console.log(app.counter([1,2,3]))
-console.log(app.add(app.pi,4))
+$.ajax({
+    url:"https://seinfeld-quotes.herokuapp.com/quotes",
+    dataType:"JSON",
+    method:"GET"
+    }).then(function(res){
+        console.log(res)
+});
