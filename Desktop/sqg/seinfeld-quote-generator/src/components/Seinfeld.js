@@ -5,7 +5,7 @@ export default class Seinfeld extends Component {
     constructor(props){
         super(props)
         this.state = {
-            quotes: ""
+            quotes:null
         }
     }
 
@@ -15,27 +15,38 @@ export default class Seinfeld extends Component {
             dataType:"JSON",
             method: "GET"
         }).then((res) =>{
-            this.setState({quotes:res}, ()=>{
-            })
+           this.setState({quotes:Object.values(res.quotes)})
         })
-  
-   
     }
 
-    
     render() {
+        let quotes;
+        
+        
         if (this.state.quotes){
-        this.setState({ quotes:Object.values(this.state.quotes.quotes)
-        .forEach(quote=>{console.log(quote)})})
+            console.log(this.state.quotes)
+             quotes = this.state.quotes.map(quote=>{
+                return (
+                <ul>
+                    <li>{quote.quote}</li>
+                    <li>{quote.author}</li>
+                </ul>
+                )
+            })
+        }else{
+            return null;
         }
-
+        console.log(quotes)
         return (
-            <div>
-      {Object.values(this.state.quotes)}
+        <div className="quote-container">
+            <div className="quotes">
+
+            {quotes}
+            </div>
+            
             </div>
         )
-
-
+        
     }
 }
 
