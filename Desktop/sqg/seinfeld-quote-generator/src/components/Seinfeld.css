@@ -1,0 +1,20 @@
+.quotes{
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.quote{
+    border: 2px solid green;
+    width: 49%;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+.quote-content{
+    margin: auto;
+}
