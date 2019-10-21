@@ -1,29 +1,16 @@
-
-import  React from 'react'
-
+import React from 'react';
 import './App.css';
 import Seinfeld from './components/Seinfeld';
-class App extends React.Component{
-  
-  render(){
+import Navbar from './components/Navbar';
+class App extends React.Component {
+  render () {
     return (
       <div className="App">
-        <Seinfeld/>
+        <Navbar />
+        <Seinfeld />
       </div>
-    )
+    );
   }
 }
 
 export default App;
-
- 
-
-
-
-// $.ajax({
-//     url:"https://seinfeld-quotes.herokuapp.com/quotes",
-//     dataType:"JSON",
-//     method:"GET"
-//     }).then(function(res){
-//         console.log(res)
-// });
