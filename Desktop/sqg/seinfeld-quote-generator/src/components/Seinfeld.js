@@ -24,21 +24,29 @@ export default class Seinfeld extends Component {
     let quotes;
 
     if (this.state.quotes) {
-      console.log (this.state.quotes);
       quotes = this.state.quotes.map (quote => {
         return (
           <div className="quote">
             <ul className="quote-content">
               <li>
-                <img
-                  className="thumb-nail"
-                  src="https://www.tvinsider.com/wp-content/uploads/2015/07/Seinfeld-Kramer.jpg"
-                />
+                {quote.quote.length < 100
+                  ? <img
+                      className="thumb-nail"
+                      src="https://www.tvinsider.com/wp-content/uploads/2015/07/Seinfeld-Kramer.jpg"
+                    />
+                  : null}
+
               </li>
-              <li>Author:{quote.author}</li>
-              <li>Quote:{quote.quote}</li>
-              <li>Season:{quote.season}</li>
-              <li>Episode:{quote.episode}</li>
+              <li>
+                {quote.quote.length < 100 ? `Author:` + quote.author : null}
+              </li>
+              <li className="quote-text">
+                {quote.quote.length < 100 ? quote.quote : null}
+              </li>
+              {quote.quote.length < 100 ? `Season:` + quote.season : null}
+              <li>
+                {quote.quote.length < 100 ? `Episode:` + quote.episode : null}
+              </li>
             </ul>
           </div>
         );

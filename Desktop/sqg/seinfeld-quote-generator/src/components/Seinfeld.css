@@ -17,3 +17,17 @@ img{
 .quote-content{
     margin: auto;
 }
+
+.quote-content li{
+    text-align: left;
+}
+
+.quote-text{
+    text-overflow: ellipsis;
+    font-size: 40px;
+}
+
+.quote-container{
+    display: inline-block;
+    margin: 0 10% 0 10%;
+}

@@ -1,3 +1,7 @@
 .nav-bar li{
     display: inline;
 }
+
+.nav-bar-container{
+    float: right;
+}
