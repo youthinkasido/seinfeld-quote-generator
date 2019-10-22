@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
+import './reset.css';
 import Seinfeld from './components/Seinfeld';
 import Navbar from './components/Navbar';
+
 class App extends React.Component {
   render () {
     return (
