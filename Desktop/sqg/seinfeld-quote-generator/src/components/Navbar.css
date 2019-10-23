@@ -1,7 +1,10 @@
 .nav-bar li{
     display: inline;
+    padding: 20px;
 }
 
 .nav-bar-container{
     float: right;
+    border: 1px solid red;
+
 }
