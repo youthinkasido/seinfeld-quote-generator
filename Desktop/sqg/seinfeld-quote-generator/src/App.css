@@ -1,7 +1,11 @@
 .App {
   text-align: center;
   display: flex;
-  margin-top: 20px;
+
+}
+
+body{
+  background-color: whitesmoke;
 }
 
 .App-logo {

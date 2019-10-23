@@ -10,6 +10,7 @@ background-color: #f1f1f1;
     color: #000;
     text-decoration: none;
     display: block;
+    border-bottom: 1px solid black;
 }
 
 .nav-bar-container{
@@ -17,9 +18,9 @@ background-color: #f1f1f1;
     position: fixed;
     overflow: auto;
     overflow-x: hidden;
-    width: 25%;
+    width: 26%;
+    margin: 20px;
 }
-
 .nav-bar p{
     margin: auto;
 }

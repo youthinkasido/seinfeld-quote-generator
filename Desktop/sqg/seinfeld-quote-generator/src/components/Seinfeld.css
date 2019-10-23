@@ -1,13 +1,4 @@
-.quotes{
-    border: 1px solid red;
 
-    
-}
-
-
-.quotes{
-    border: 2px solid green;
-}
 
 img{
     height: 200px;
@@ -15,6 +6,7 @@ img{
 
 .quote-content{
     margin: auto;
+    margin-top: 20px;
 }
 
 .quote-content li{
@@ -48,17 +40,16 @@ img{
     font-family:Helvetica, sans-serif;
 }
 
-
 .quote-season-author-and-episode-container{
     text-align: left;
 }
 
 .quote-text-container{
-    border: 1px solid black;
     display: flex;
-    width: 95%;
-    margin: auto;
+    width: 80%;
+    margin-left: 40px;
     height: 150px;
+    background: white;
 }
 
 .quote-image-container{
