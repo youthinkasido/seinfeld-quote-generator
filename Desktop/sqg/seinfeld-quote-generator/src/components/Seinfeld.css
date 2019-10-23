@@ -4,6 +4,7 @@
     
 }
 
+
 .quotes{
     border: 2px solid green;
 }
@@ -18,17 +19,37 @@ img{
 
 .quote-content li{
     text-align: left;
-    display: inline-flex;
 }
 
 .quote-text{
-    text-overflow: ellipsis;
-    font-size: 40px;
+    font-size: 24px;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+    margin: 20px 0 20px;
+   
+}
+
+.quote-season{
+    margin-left: 10px;
+}
+
+.quote-author{
+    font-weight: 800;
+
 }
 
 .quote-container{
     display: inline-block;
     margin: 0 10% 0 10%;
+}
+
+.quote-season-author-and-episode-container li{
+    display: inline;
+}
+
+
+.quote-season-author-and-episode-container{
+    text-align: left;
 }
 
 .quote-text-container{
@@ -42,5 +63,4 @@ img{
 .quote-image-container{
     width: 50%;
     border: 1px solid blue;
-    display: inline-flex;
 }

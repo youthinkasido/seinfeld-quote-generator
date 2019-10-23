@@ -26,7 +26,7 @@ export default class Seinfeld extends Component {
 
     if (this.state.quotes) {
       filteredQuotes = this.state.quotes.filter (
-        quote => quote.quote.length < 50
+        quote => quote.quote.length < 100 && quote.quote.length > 45
       );
       quotes = filteredQuotes.map (quote => {
         return (
@@ -34,17 +34,22 @@ export default class Seinfeld extends Component {
             <ul className="quote-content">
               <div className="quote-text-container">
                 <ul>
-                  <li>
-                    Author:{quote.author}
-                  </li>
+
                   <li className="quote-text">
                     "{quote.quote}"{' '}
                   </li>
-                  Season: {quote.season}
 
-                  <li>
-                    Episode: {quote.episode}
-                  </li>
+                  <ul className="quote-season-author-and-episode-container">
+                    <li className="quote-author">
+                      —{quote.author}
+                    </li>
+                    <li className="quote-season">
+                      (Season {quote.season}
+                    </li>
+                    <li className="quote-episode">
+                      , Episode {quote.episode})
+                    </li>
+                  </ul>
                 </ul>
               </div>
             </ul>
