@@ -14,15 +14,19 @@ background-color: #f1f1f1;
 }
 
 .nav-bar-container{
-    border: 1px solid red;
+    border: 1px solid #e8e8e8;
     position: fixed;
     overflow: auto;
     overflow-x: hidden;
     width: 26%;
     margin: 20px;
+    height: 500px;
+    background: white;
 }
 .nav-bar p{
     margin: auto;
+    font-size: 18px;
+    color: #333;
 }
 
 .nav-bar img{

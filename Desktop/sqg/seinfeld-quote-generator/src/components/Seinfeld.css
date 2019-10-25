@@ -11,6 +11,7 @@ img{
 
 .quote-content li{
     text-align: left;
+   color: #333;
 }
 
 .quote-text{
@@ -27,6 +28,8 @@ img{
 
 .quote-author{
     font-weight: 800;
+    font-size: 18px;
+    color: #333;
 
 }
 
